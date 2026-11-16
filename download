@@ -1,0 +1,52 @@
+# Build directories
+build/
+Build/
+x64/
+Debug/
+Release/
+
+# IDE files
+.vscode/
+.idea/
+*.sln
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
+
+# CMake
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+*.cmake
+
+# JUCE
+JUCE/
+!JUCE/.gitmodules
+
+# Compiled binaries
+*.dll
+*.vst3
+*.component
+*.app
+*.so
+*.dylib
+
+# Object files
+*.obj
+*.o
+
+# OS files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+*~
+
+# Package directories
+packages/
