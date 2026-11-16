@@ -16,6 +16,9 @@ jobs:
       - name: Clean build
         run: Remove-Item -Recurse -Force build -ErrorAction SilentlyContinue
 
+      - name: Download JUCE
+        run: git clone --depth 1 --branch 8.0.10 https://github.com/juce-framework/JUCE.git JUCE
+
       - name: Configure
         run: cmake -B build -G "Visual Studio 18 2026" -A x64
 
