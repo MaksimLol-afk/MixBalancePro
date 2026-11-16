@@ -74,10 +74,14 @@ target_link_libraries(MixBalancePro PRIVATE
 )
 
 # Copy resources
-juce_copy_plugin_resources(MixBalancePro
-    RESOURCES
+juce_add_binary_data(MixBalanceProResources
+    SOURCES
         Resources/Icon.png
         Resources/LookAndFeel.json
+)
+
+target_link_libraries(MixBalancePro PRIVATE
+    MixBalanceProResources
 )
 
 # Install
