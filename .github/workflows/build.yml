@@ -1,4 +1,3 @@
-
 name: Build VST3
   on: [workflow_dispatch]
   jobs:
